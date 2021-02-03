@@ -4,8 +4,8 @@ public class TestaMetodos {
 
 	public static void main(String[] args) {
 		
-		Conta primeira = new Conta();
-		Conta segunda = new Conta();
+		Conta primeira = new Conta(123, 123);
+		Conta segunda = new Conta(456, 456);
 		
 		primeira.depositar(100);
 		segunda.depositar(1100);
@@ -18,12 +18,14 @@ public class TestaMetodos {
 		System.out.println("segunda após a tranferencia: " + segunda.getSaldo());
 		
 		
-		Conta contaTeste = new Conta();
+		Conta contaTeste = new Conta(789, 789);
 		Cliente teste = new Cliente();
 	
 		contaTeste.setTitular(teste);
 		contaTeste.getTitular().setNome("abc");
 		System.out.println(contaTeste.getTitular().getNome());
+		
+		System.out.println(Conta.getTotal());
 	}
 
 }
