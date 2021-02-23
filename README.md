@@ -28,7 +28,7 @@
 - Plataforma: Windows;
 - IDE: Eclipse.
 
-*******;
+*******
 
 <div id='requisitos'/>
 
